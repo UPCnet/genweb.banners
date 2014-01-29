@@ -16,9 +16,9 @@ class IBanner(form.Schema):
     )
 
     picture = NamedImage(
-            title=_(u"Picture"),
-            description=_(u"Please upload an image"),
-            required=True,
+        title=_(u"Picture"),
+        description=_(u"Please upload an image"),
+        required=False,
     )
 
     description = RichText(
@@ -30,13 +30,14 @@ class IBanner(form.Schema):
     url = schema.TextLine(
         title=_(u"url"),
         description=_(u"URL to open"),
-        required=True,
+        required=False,
     )
 
     new_window = schema.Bool(
         title=_(u"Open in new window"),
         description=_(u"Check it to open link in a new window"),
-        required=True,
+        default=True,
+        required=False,
     )
 
 # @indexer(ICommunity)
