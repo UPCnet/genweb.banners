@@ -1,0 +1,6 @@
+<object name="portal_types">
+
+    <!-- New content types -->
+    <object name="Banner" meta_type="Dexterity FTI" />
+
+</object>
