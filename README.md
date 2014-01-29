@@ -1,4 +1,0 @@
-genweb.banners
-==============
-
-Genweb Banners

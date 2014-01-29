@@ -1,0 +1,16 @@
+<configure
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+    <genericsetup:upgradeSteps
+        source="*"
+        destination="1000"
+        profile="genweb.banners:default">
+
+        <genericsetup:upgradeStep
+            title="Update content types"
+            description="Updates rolemap with a sample new permission"
+            handler=".upgrades.update_rolemap_tool" />
+
+    </genericsetup:upgradeSteps>
+
+</configure>
