@@ -2,7 +2,7 @@
 from plone.app.textfield import RichText
 from plone.directives import form
 from plone.namedfile.field import NamedImage
-from webupcnet.core import _
+from genweb.banners import _
 from zope import schema
 
 
