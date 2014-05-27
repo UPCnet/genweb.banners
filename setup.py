@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
+import os
 
-
-version = '0.1'
-description = 'Extra content and utilities for Genweb'
-long_description = open('README.rst').read() + open('HISTORY.rst').read() + \
-    open('LICENSE').read()
-
+version = '1.0'
+README = open("README.rst").read()
+HISTORY = open(os.path.join("docs", "HISTORY.rst")).read()
 
 setup(
     name='genweb.banners',
     version=version,
-    description=description,
-    long_description=long_description,
+    description='Extra content and utilities for Genweb',
+    long_description=README + "\n" + HISTORY,
+
     classifiers=[
         'Framework :: Plone',
         'Programming Language :: Python',
