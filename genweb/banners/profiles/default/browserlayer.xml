@@ -1,4 +1,0 @@
-<layers>
- <layer name="genweb.banners"
-        interface="genweb.banners.interfaces.IBrowserLayer" />
-</layers>

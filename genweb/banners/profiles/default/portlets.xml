@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<portlets>
+    <portlet
+       addview="genweb.banners.portlet"
+       title="Banners portlet"
+       description="A portlet that show site banners."
+       />
+</portlets>

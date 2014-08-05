@@ -10,7 +10,7 @@
 
     <!-- Include configuration for dependencies listed in setup.py -->
     <includeDependencies package="." />
-    <include package="plone.app.portlets" />
+
     <!-- Grok the package to initialise schema interfaces and content classes -->
     <grok:grok package="." />
 
@@ -21,11 +21,6 @@
     <!-- Register translations -->
     <i18n:registerTranslations directory="locales" />
 
-
-    <!-- Templates overrides -->
-    <include package="z3c.jbot" file="meta.zcml" />
-    <browser:jbot directory="overrides" />
-
     <!-- Default profile -->
     <genericsetup:registerProfile
         name="default"
@@ -34,14 +29,5 @@
         description="Extra content and utilities for Genweb."
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
-
-    <!-- Instalation import step -->
-    <genericsetup:importStep
-        name="genweb_banners"
-        handler="genweb.banners.setuphandlers.importVarious"
-        title="genweb.banners imports"
-        description="genweb.banners: Various install import steps">
-            <depends name="typeinfo"/>
-    </genericsetup:importStep>
 
 </configure>

@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 import os
 
 version = '1.1.dev0'
+
 README = open("README.rst").read()
 HISTORY = open(os.path.join("docs", "HISTORY.rst")).read()
 
@@ -29,7 +30,6 @@ setup(
         'Products.CMFPlone',
         'five.grok',
         'plone.app.dexterity',
-        'z3c.jbot'
     ],
     extras_require={
         'test': [

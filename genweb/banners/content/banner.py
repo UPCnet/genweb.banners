@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-from plone.app.textfield import RichText
+from plone.app.textfield import RichText as RichTextField
 from plone.directives import form
-from plone.namedfile.field import NamedImage
+from plone.namedfile.field import NamedBlobImage
 from genweb.banners import _
 from zope import schema
 
 
 class IBanner(form.Schema):
-    """ A company's service
+    """ A site banner.
     """
 
     title = schema.TextLine(
@@ -15,13 +15,13 @@ class IBanner(form.Schema):
         required=True
     )
 
-    picture = NamedImage(
+    picture = NamedBlobImage(
         title=_(u"Picture"),
         description=_(u"Please upload an image"),
         required=False,
     )
 
-    description = RichText(
+    description = RichTextField(
         title=_(u"Description"),
         description=_(u"Rich Text to use along with the banner"),
         required=False
@@ -39,14 +39,3 @@ class IBanner(form.Schema):
         default=True,
         required=False,
     )
-
-# @indexer(ICommunity)
-# def imageFilename(context):
-#     """Create a catalogue indexer, registered as an adapter, which can
-#     populate the ``context.filename`` value and index it.
-#     """
-#     return context.image.filename
-# grok.global_adapter(imageFilename, name='image_filename')
-
-
-

@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="genweb.banners">
+
+    <include package="plone.app.portlets" />
+    <plone:portlet
+        name="genweb.banners.portlet"
+        interface=".bannersportlet.IBannersPortlet"
+        assignment=".bannersportlet.Assignment"
+        view_permission="zope2.View"
+        renderer=".bannersportlet.Renderer"
+        addview=".bannersportlet.AddForm"
+        editview=".bannersportlet.EditForm"
+    />
+
+</configure>
