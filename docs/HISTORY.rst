@@ -1,9 +1,9 @@
 
-1.1 (unreleased)
+1.1 (2014-08-08)
 ----------------
 
-- Nothing changed yet.
-
+* New interface for multilingual behavior [Victor Fernandez de Alba]
+* Clean, fix, modernize. Transfer portlet from upc.genweb.banners. [Victor Fernandez de Alba]
 
 1.0 (2014-05-27)
 ----------------
