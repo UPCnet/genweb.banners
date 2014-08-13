@@ -6,7 +6,7 @@
         <h2 class="goout" i18n:translate="baners" id="titol-baners">Baners</h2>
         <ul class="unstyled" role="list">
             <li tal:repeat="banner banners" role="listitem">
-                <a tal:define="target python:banner.obrirEnFinestraNova and '_blank' or None"
+                <a tal:define="target python:banner.open_link_in_new_window and '_blank' or None"
                    tal:attributes="href banner/URLdesti;
                                    target target | nothing">
                   <img rel="tooltip" tal:attributes="src string:${banner/getURL}/Imatge;
