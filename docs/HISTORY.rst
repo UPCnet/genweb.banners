@@ -1,9 +1,9 @@
 
-1.2 (unreleased)
+1.2 (2014-09-16)
 ----------------
 
-- Nothing changed yet.
-
+* Improve banners [Victor Fernandez de Alba]
+* Not allow banners to be put outside banner container [Victor Fernandez de Alba]
 
 1.1 (2014-08-08)
 ----------------
