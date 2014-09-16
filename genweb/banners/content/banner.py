@@ -10,11 +10,6 @@ class IBanner(form.Schema):
     """ A site banner.
     """
 
-    title = schema.TextLine(
-        title=_(u'label_title', default=u'Title'),
-        required=True
-    )
-
     picture = NamedBlobImage(
         title=_(u"Picture"),
         description=_(u"Please upload an image"),
