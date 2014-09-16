@@ -16,12 +16,6 @@ class IBanner(form.Schema):
         required=False,
     )
 
-    description = RichTextField(
-        title=_(u"Description"),
-        description=_(u"Rich Text to use along with the banner"),
-        required=False
-    )
-
     url = schema.TextLine(
         title=_(u"url"),
         description=_(u"URL to open"),
@@ -33,4 +27,10 @@ class IBanner(form.Schema):
         description=_(u"Check it to open link in a new window"),
         default=True,
         required=False,
+    )
+
+    text = RichTextField(
+        title=_(u"Description"),
+        description=_(u"Rich Text to use along with the banner"),
+        required=False
     )
