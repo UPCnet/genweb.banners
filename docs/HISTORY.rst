@@ -1,9 +1,8 @@
 
-1.4 (unreleased)
+1.4 (2014-09-16)
 ----------------
 
-- Nothing changed yet.
-
+* Reorder fields [Victor Fernandez de Alba]
 
 1.3 (2014-09-16)
 ----------------
