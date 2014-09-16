@@ -1,9 +1,8 @@
 
-1.3 (unreleased)
+1.3 (2014-09-16)
 ----------------
 
-- Nothing changed yet.
-
+* Delete redundant banner [Victor Fernandez de Alba]
 
 1.2 (2014-09-16)
 ----------------
