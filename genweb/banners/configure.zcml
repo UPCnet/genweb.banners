@@ -17,6 +17,7 @@
     <!-- Include all zcml files -->
     <include file="upgrades.zcml" />
     <include file="permissions.zcml" />
+    <include package=".portlets" />
 
     <!-- Register translations -->
     <i18n:registerTranslations directory="locales" />
