@@ -7,9 +7,9 @@
         <ul class="unstyled" role="list">
             <li tal:repeat="banner banners" role="listitem">
                 <a tal:define="target python:banner.open_link_in_new_window and '_blank' or None"
-                   tal:attributes="href banner/URLdesti;
+                   tal:attributes="href banner/getRemoteUrl;
                                    target target | nothing">
-                  <img rel="tooltip" tal:attributes="src string:${banner/getURL}/Imatge;
+                  <img rel="tooltip" tal:attributes="src string:${banner/getURL}/@@images/image;
                                     alt python:view.getAltAndTitle(banner.Title);
                                     title python:view.getAltAndTitle(banner.Title)" />
                 </a>
