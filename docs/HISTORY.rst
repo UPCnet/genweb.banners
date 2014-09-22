@@ -1,9 +1,9 @@
 
-1.5 (unreleased)
+1.5 (2014-09-22)
 ----------------
 
-- Nothing changed yet.
-
+* Improve banners portlet [Victor Fernandez de Alba]
+* Fixed registration of banners portlets [Victor Fernandez de Alba]
 
 1.4 (2014-09-16)
 ----------------
