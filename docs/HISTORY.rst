@@ -1,9 +1,8 @@
 
-1.6 (unreleased)
+1.6 (2014-09-29)
 ----------------
 
-- Nothing changed yet.
-
+* Add behavior OpenLinkInNewWindow [Pilar Marinas]
 
 1.5 (2014-09-22)
 ----------------
