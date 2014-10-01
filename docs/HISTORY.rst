@@ -1,9 +1,8 @@
 
-1.7 (unreleased)
+1.7 (2014-10-01)
 ----------------
 
-- Nothing changed yet.
-
+* Improve banners markup and conditionaly alts and title and links [Victor Fernandez de Alba]
 
 1.6 (2014-09-29)
 ----------------
