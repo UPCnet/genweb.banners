@@ -1,17 +1,20 @@
 <tal:banners define="banners view/getBanners"
              i18n:domain="genweb.banners">
-  <div id="baners"
-       tal:condition="banners" class="portlet portlet-baners" role="complementary" aria-labelledby="titol-baners">
+  <div id="baners" class="portlet portlet-baners" role="complementary" aria-labelledby="titol-baners"
+       tal:condition="banners">
 
-        <h2 class="goout" i18n:translate="baners" id="titol-baners">Baners</h2>
+        <h2 class="goout" id="titol-baners" i18n:translate="baners">Baners</h2>
         <ul class="unstyled" role="list">
-            <li tal:repeat="banner banners" role="listitem">
-                <a tal:define="target python:banner.open_link_in_new_window and '_blank' or None"
+            <li role="listitem" tal:repeat="banner banners">
+                <a tal:define="target python:banner.open_link_in_new_window and '_blank' or None;
+                               banner_literal python:view.getAltAndTitle(banner.Title, banner.open_link_in_new_window)"
                    tal:attributes="href banner/getRemoteUrl;
-                                   target target | nothing">
-                  <img rel="tooltip" tal:attributes="src string:${banner/getURL}/@@images/image;
-                                    alt python:view.getAltAndTitle(banner.Title);
-                                    title python:view.getAltAndTitle(banner.Title)" />
+                                   target target | nothing"
+                   tal:omit-tag="not:banner/getRemoteUrl">
+                  <img rel="tooltip"
+                       tal:attributes="src string:${banner/getURL}/@@images/image;
+                                       alt banner_literal;
+                                       title banner_literal" />
                 </a>
             </li>
         </ul>

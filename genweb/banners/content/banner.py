@@ -28,5 +28,6 @@ class IBanner(form.Schema):
 
 @indexer(IBanner)
 def getRemoteUrl(obj):
-    return replace_link_variables_by_paths(obj, obj.remoteUrl)
+    if obj.remoteUrl:
+        return replace_link_variables_by_paths(obj, obj.remoteUrl)
 grok.global_adapter(getRemoteUrl, name='getRemoteUrl')

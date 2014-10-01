@@ -79,12 +79,14 @@ class Renderer(base.Renderer):
                                      sort_on='getObjPositionInParent',
                                      sort_limit=limit)[:limit]
 
-    def getAltAndTitle(self, altortitle):
+    def getAltAndTitle(self, altortitle, open_in_new_window):
         """ Funcio que extreu idioma actiu i afegeix al alt i al title de les imatges del banner
             el literal Obriu l'enllac en una finestra nova.
         """
-        return '%s, %s' % (altortitle.decode('utf-8'),
-            self.portal().translate(_('obrir_link_finestra_nova', default=u"(obriu en una finestra nova)")))
+        if open_in_new_window:
+            return '%s, %s' % (altortitle.decode('utf-8'), self.portal().translate(_('obrir_link_finestra_nova', default=u"(obriu en una finestra nova)")))
+        else:
+            return '%s' % (altortitle.decode('utf-8'))
 
 
 class AddForm(base.AddForm):
