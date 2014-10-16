@@ -1,9 +1,8 @@
 
-1.8 (unreleased)
+1.8 (2014-10-16)
 ----------------
 
-- Nothing changed yet.
-
+* Obliterate unused resource [Victor Fernandez de Alba]
 
 1.7 (2014-10-01)
 ----------------
