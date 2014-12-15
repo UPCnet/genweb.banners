@@ -1,9 +1,8 @@
 
-1.9 (unreleased)
+1.9 (2014-12-15)
 ----------------
 
-- Nothing changed yet.
-
+* traduccions [Paco Gregori]
 
 1.8 (2014-10-16)
 ----------------
