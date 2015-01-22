@@ -17,6 +17,8 @@ from Products.CMFCore.utils import getToolByName
 from zope.i18nmessageid import MessageFactory
 _ = MessageFactory('genweb.banners')
 
+from genweb.core import utils
+
 
 class IBannersPortlet(IPortletDataProvider):
     """A portlet
@@ -74,8 +76,10 @@ class Renderer(base.Renderer):
     def getBanners(self):
         catalog = api.portal.get_tool(name='portal_catalog')
         limit = self.data.count
+        lang = utils.pref_lang()
         return catalog.searchResults(portal_type='Banner',
                                      review_state=['published', 'intranet'],
+                                     Language=lang,                                     
                                      sort_on='getObjPositionInParent',
                                      sort_limit=limit)[:limit]
 
