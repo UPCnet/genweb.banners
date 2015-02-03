@@ -22,7 +22,7 @@ msgstr "(obriu en una finestra nova)"
 #. Default: "Imatge"
 #: content/Banner.py
 msgid "genweb.banners_label_Imatge"
-msgstr "Banner"
+msgstr "Bàner"
 
 #. Default: "Obrirennovafinestra"
 #: content/Banner.py

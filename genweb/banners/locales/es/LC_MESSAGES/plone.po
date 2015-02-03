@@ -17,4 +17,4 @@ msgstr ""
 "Domain: plone\n"
 
 msgid "portlet_banners_title"
-msgstr "Banners"
+msgstr "Báners"

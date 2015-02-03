@@ -21,7 +21,7 @@ msgstr "(abre en ventana nueva)"
 #. Default: "Imatge"
 #: content/Banner.py
 msgid "genweb.banners_label_Imatge"
-msgstr "Banner"
+msgstr "Báner"
 
 #. Default: "Obrirennovafinestra"
 #: content/Banner.py
@@ -39,4 +39,4 @@ msgid "genweb.banners_help_descripcion"
 msgstr "Empieza la URL con http:// si quieres enlazar con un elemento fuera de tu sitio web."
 
 msgid "baners"
-msgstr "Baners"
+msgstr "Báners"
