@@ -41,3 +41,16 @@ msgstr "Comença la url per http:// si vols enllaçar fora del teu espai."
 
 msgid "baners"
 msgstr "Bàners"
+
+#: genweb.banners/genweb/banners/portlets/bannersportlet.py:101
+msgid "This portlet displays the site banners."
+msgstr "El portlet mostra els banners."
+
+#: genweb.banners/genweb/banners/portlets/bannersportlet.py:29
+msgid "Number of banners to display"
+msgstr "Nombre de banners a mostrar"
+
+#: genweb.banners/genweb/banners/portlets/bannersportlet.py:30
+msgid "How many banners to list."
+msgstr "Nombre de banners a mostrar"
+
