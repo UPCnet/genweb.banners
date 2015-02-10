@@ -1,9 +1,10 @@
 
-1.10 (unreleased)
+1.10 (2015-02-10)
 -----------------
 
-- Nothing changed yet.
-
+* trad portlet banners [Paco Gregori]
+* Translate portlets name [hanirok]
+* lang banners [Paco Gregori]
 
 1.9 (2014-12-15)
 ----------------
