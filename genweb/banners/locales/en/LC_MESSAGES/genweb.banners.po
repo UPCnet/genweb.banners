@@ -53,3 +53,7 @@ msgstr "Number of banners to display"
 #: genweb.banners/genweb/banners/portlets/bannersportlet.py:30
 msgid "How many banners to list."
 msgstr "How many banners to list."
+
+#: genweb.banners/genweb/banners/portlets/bannersportlet.py:57
+msgid "Genweb banners"
+msgstr "Banners"
