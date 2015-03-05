@@ -1,6 +1,11 @@
 <?xml version="1.0"?>
+
 <portlets xmlns:i18n="http://xml.zope.org/namespaces/i18n"
           i18n:domain="plone">
+
+
+    <!-- Removing the unwanted portlets and rename the existing ones -->
+    <portlet addview="genweb.banners.portlet" remove="True" />
     <portlet addview="genweb.banners.portlet"
              title="portlet_banners_title"
              description="A portlet that show site banners."
