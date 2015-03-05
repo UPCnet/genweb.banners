@@ -1,9 +1,9 @@
 
-1.11 (unreleased)
+1.11 (2015-03-05)
 -----------------
 
-- Nothing changed yet.
-
+* remove=true al reinstalar portlets [hanirok]
+* Portlets translations [hanirok]
 
 1.10 (2015-02-10)
 -----------------
