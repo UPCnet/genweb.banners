@@ -1,9 +1,8 @@
 
-1.12 (unreleased)
+1.12 (2015-05-28)
 -----------------
 
-- Nothing changed yet.
-
+* Aumentar numero banners [hanirok]
 
 1.11 (2015-03-05)
 -----------------
