@@ -31,7 +31,7 @@ class IBannersPortlet(IPortletDataProvider):
     count = schema.Int(title=_(u'Number of banners to display'),
                        description=_(u'How many banners to list.'),
                        required=True,
-                       default=5,
+                       default=7,
                        min=5,
                        max=7)
 
@@ -45,7 +45,7 @@ class Assignment(base.Assignment):
 
     implements(IBannersPortlet)
 
-    def __init__(self, count=5, state=('published', )):
+    def __init__(self, count=7, state=('published', )):
         self.count = count
         # self.state = state
 
@@ -79,7 +79,7 @@ class Renderer(base.Renderer):
         lang = utils.pref_lang()
         return catalog.searchResults(portal_type='Banner',
                                      review_state=['published', 'intranet'],
-                                     Language=lang,                                     
+                                     Language=lang,
                                      sort_on='getObjPositionInParent',
                                      sort_limit=limit)[:limit]
 
@@ -105,7 +105,7 @@ class AddForm(base.AddForm):
     description = _(u"This portlet displays the site banners.")
 
     def create(self, data):
-        return Assignment(count=data.get('count', 5), state=data.get('state', ('published',)))
+        return Assignment(count=data.get('count', 7), state=data.get('state', ('published',)))
 
 
 class EditForm(base.EditForm):
